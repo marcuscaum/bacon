@@ -1,0 +1,44 @@
+@import url('http://fonts.googleapis.com/css?family=Roboto:400,300,100,700')
+@import url('http://code.ionicframework.com/ionicons/2.0.0/css/ionicons.min.css')
+@import '../node_modules/rupture/rupture'
+@import '../node_modules/jeet/stylus/jeet'
+@import 'mixins'
+
+
+html, body, h1, h2, h3, h4, h5, h6, p
+	margin 0
+	padding 0
+	font-family mf
+
+
+section 
+	size(100%, 100vh)
+	display table
+	background bege
+
+
+header
+	> div
+		size(100%, 20vh)
+		display table
+		&:first-child
+			height 80vh
+
+	.logo
+		background url('../img/logo.png')
+		background-position center
+		background-repeat no-repeat
+		background-size auto 100%
+	.contador
+		text-align center 
+		background white
+		h1
+			size(100%, 70%)
+			float left
+			font-size 135px
+			font-weight 100
+		p 
+			size(100%, 30%)
+			float left
+			font-size 18px
+			font-weight 100

@@ -1,0 +1,1 @@
+requirejs.config({baseUrl:"js/lib",paths:{app:"../app"},shim:{smoothscroll:["jquery"],cycle:["jquery"],marquee:["jquery"]}}),requirejs(["app/main"]);

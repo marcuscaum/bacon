@@ -1,0 +1,71 @@
+@import 'variables'
+
+font(s, w)
+	font-size s
+	font-weight w
+
+input()
+	border none
+	padding 5px
+	font(15px, 100)
+	font-family mf
+
+trs(v = 0.3s ease-in-out all)
+	-webkit-transition v
+	-moz-transition v
+	-ms-transition v
+	-o-transition v
+	transition v
+
+trsf(v)
+	-webkit-transform v
+	   -moz-transform v
+	    -ms-transform v
+ 	     -o-transform v
+	        transform v
+
+set-font-size(value) {
+    if (value is inherit) {
+        /* do nothing, "inherit" has no unit */
+    } else {
+        font-size: remify(value);
+    }
+}
+
+remify(value) { /* separate mixin, so it can be used elsewhere */
+    u = unit(value);
+
+    if (u is 'px') {
+        return unit(value/16, 'rem');
+    } else {
+        return unit(value, u);
+    }
+}
+
+size(w, h)
+	width w 
+	height h
+
+bg-cover(b)
+	background url(b)
+	background-size cover
+
+$full-page
+	size(100% !important, 960px !important)
+	position  relative
+	
+p-text(z = p_text)
+	width 100%
+	margin-top 30px
+	float left
+	set-font-size(z)
+	line-height 30px
+	font-weight 300
+
+
+h1-title(z = h1_title)
+	width 100%
+	float left
+	set-font-size(z)
+	font-weight 300
+	margin 0
