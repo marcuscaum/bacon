@@ -10,15 +10,39 @@ html, body, h1, h2, h3, h4, h5, h6, p
 	padding 0
 	font-family mf
 
+a 
+	text-decoration none
+	color inherit
 
 section 
-	size(100%, 100vh)
+	size(100%, 99vh)
 	display table
-	background bege
+	background-color #232323
+	&:first-child
+		background url('../img/bg-bacon.png')
+		background-size cover
+		background-color #232323
 
+// .contador
+// 	text-align center 
+// 	color #b93529
+// 	border-bottom 3px solid #b93529
+// 	h1
+// 		size(100%, 55%)
+// 		float left
+// 		font-size 65px
+// 		font-weight 100
+// 		border-bottom 1px dashed
+// 		border-top 1px dashed
+// 		margin-bottom 15px
+// 	p 
+// 		size(100%, 30%)
+// 		float left
+// 		font-size 18px
+// 		font-weight 100
 
 header
-
+	background-linear-gradient(top, transparent, 60%, #232323, 85%)
 	> div
 		size(100%, 20vh)
 		display table
@@ -28,22 +52,25 @@ header
 		background url('../img/logo.png')
 		background-position center
 		background-repeat no-repeat
-		background-size auto 80%
+		background-size auto 60%
+	.ct-button
+		a 
+			display block
+			width 150px
+			margin 25px auto
+			text-align center
+			padding 10px 15px
+			background #232323
+			font-weight 300
+			color white
+			border 1px dashed bege
+			border-radius 10px
+			trs()
+			&:hover
+				border 1px dashed #232323
+				color white
+				background-linear-gradient(top, #9F101A, 25%, #741014, 75%)
 
-	.contador
-		text-align center 
-		color #b93529
-		border-bottom 3px solid #b93529
-		h1
-			size(100%, 55%)
-			float left
-			font-size 65px
-			font-weight 100
-			border-bottom 1px dashed
-			border-top 1px dashed
-			margin-bottom 15px
-		p 
-			size(100%, 30%)
-			float left
-			font-size 18px
-			font-weight 100
+				
+
+
